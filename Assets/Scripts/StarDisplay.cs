@@ -19,7 +19,13 @@ public class StarDisplay : MonoBehaviour
         starText.text = stars.ToString();
     }
 
+    public bool HaveEnoughStars(int amount)
+    {
+        return stars >= amount;
+    }
+
     public void AddStars(int amount)
+    // This is called from an Animation Event
     {
         stars += amount;
         UpdateDisplay();
