@@ -24,6 +24,5 @@ public class Health : MonoBehaviour
         GameObject deathVFXObject = Instantiate(deathVFX, transform.position, transform.rotation);
         // Instantiating because the lizard gets destroyed. If we childed the particle effect, then that would be destroyed before it gets played
         Destroy(deathVFXObject, 1f);
-
     }
 }
