@@ -7,6 +7,11 @@ public class Attacker : MonoBehaviour
     [Range(0f, 5f)] float currentSpeed = 1f;
     GameObject currentTarget;
 
+    void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
     void Update()
     {
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
@@ -39,5 +44,10 @@ public class Attacker : MonoBehaviour
         Health health = currentTarget.GetComponent<Health>();
         if (health)
             health.DealDamage(damage);
+    }
+
+    void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
     }
 }
