@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5258838452748202937}
   - component: {fileID: 5258838452748202936}
   - component: {fileID: 333150558}
-  - component: {fileID: 5430245024495025700}
+  - component: {fileID: 5258838453195388985}
   m_Layer: 0
   m_Name: Level Controller
   m_TagString: Untagged
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winLabel: {fileID: 0}
+  loseLabel: {fileID: 0}
   waitToLoad: 4
 --- !u!114 &333150558
 MonoBehaviour:
@@ -60,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 4
---- !u!82 &5430245024495025700
+--- !u!82 &5258838453195388985
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,7 +71,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8aa1833e3f2be48a1ad9e0c1213c68eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0cc58f9a8a2dd41f7b66bcc376c254d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
