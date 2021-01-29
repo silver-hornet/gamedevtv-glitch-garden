@@ -47,6 +47,7 @@ public class LevelController : MonoBehaviour
     public void LevelTimerFinished()
     {
         levelTimerFinished = true;
+        StopSpawners();
 
     }
 
