@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] float speed = 10f;
     [SerializeField] float damage = 50f;
-
+    
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
